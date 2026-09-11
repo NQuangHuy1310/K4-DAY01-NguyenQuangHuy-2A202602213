@@ -51,11 +51,11 @@ Nguồn evidence: `segmentation_predictions.json` và `visuals/segmentation_pred
 
 `ảnh thô → guideline → ground truth → huấn luyện → prediction → QC/rework`
 
-| Tác vụ | Đơn vị/định dạng ground truth | Lỗi hoặc điểm mơ hồ quan sát được | Annotator làm gì? | Reviewer xem gì? |
-| --- | --- | --- | --- | --- |
-| Phân loại ảnh |  |  |  |  |
-| Phát hiện vật thể |  |  |  |  |
-| Instance segmentation |  |  |  |  |
+| Tác vụ                | Đơn vị/định dạng ground truth | Lỗi hoặc điểm mơ hồ quan sát được | Annotator làm gì? | Reviewer xem gì? |
+| --------------------- | ----------------------------- | --------------------------------- | ----------------- | ---------------- |
+| Phân loại ảnh         |                               |                                   |                   |                  |
+| Phát hiện vật thể     |                               |                                   |                   |                  |
+| Instance segmentation |                               |                                   |                   |                  |
 
 ## 5. An toàn dữ liệu
 
@@ -64,12 +64,12 @@ Nguồn evidence: `segmentation_predictions.json` và `visuals/segmentation_pred
 
 ## 6. Danh sách bằng chứng
 
-- [ ] `classification_predictions.json`
-- [ ] `detection_predictions.json`
-- [ ] `segmentation_predictions.json`
-- [ ] `IMAGE_ATTRIBUTION.md`
-- [ ] `visuals/classification_top5.png`
-- [ ] `visuals/detection_predictions.png`
-- [ ] `visuals/segmentation_prediction.png`
-- [ ] Ô validation cuối notebook báo `PASS`.
-- [ ] Không có họ tên, MSSV hoặc dữ liệu nhạy cảm trong báo cáo/output.
+- [x] `classification_predictions.json`
+- [x] `detection_predictions.json`
+- [x] `segmentation_predictions.json`
+- [x] `IMAGE_ATTRIBUTION.md`
+- [x] `visuals/classification_top5.png`
+- [x] `visuals/detection_predictions.png`
+- [x] `visuals/segmentation_prediction.png`
+- [x] Ô validation cuối notebook báo `PASS`.
+- [x] Không có họ tên, MSSV hoặc dữ liệu nhạy cảm trong báo cáo/output.
