@@ -41,11 +41,11 @@ Sau bài thực hành, bạn có thể:
 
 ## Ba tác vụ
 
-| Tác vụ | Checkpoint | Taxonomy đi kèm checkpoint | Một prediction mô tả |
-| --- | --- | --- | --- |
-| Phân loại ảnh | `yolo11n-cls.pt` | ImageNet-1K | một lớp được xếp hạng cho toàn ảnh |
-| Phát hiện vật thể | `yolo11n.pt` | COCO, 80 lớp | một lớp và một hộp cho mỗi vật thể được phát hiện |
-| Phân đoạn đối tượng | `yolo11n-seg.pt` | COCO, 80 lớp | một lớp, hộp và đa giác cho mỗi instance |
+| Tác vụ              | Checkpoint       | Taxonomy đi kèm checkpoint | Một prediction mô tả                              |
+| ------------------- | ---------------- | -------------------------- | ------------------------------------------------- |
+| Phân loại ảnh       | `yolo11n-cls.pt` | ImageNet-1K                | một lớp được xếp hạng cho toàn ảnh                |
+| Phát hiện vật thể   | `yolo11n.pt`     | COCO, 80 lớp               | một lớp và một hộp cho mỗi vật thể được phát hiện |
+| Phân đoạn đối tượng | `yolo11n-seg.pt` | COCO, 80 lớp               | một lớp, hộp và đa giác cho mỗi instance          |
 
 Ba taxonomy/định dạng trên là ví dụ công khai để học cách đọc dữ liệu. Chúng không phải taxonomy hoặc
 guideline nội bộ của VinFast.
@@ -61,7 +61,7 @@ Bạn chưa cần cài Python, VS Code, Antigravity hoặc CVAT cho bài này. T
 - [ ] Không sử dụng ảnh cá nhân hoặc dữ liệu nội bộ; notebook đã có sẵn ảnh công khai cho bài lab.
 - [ ] Biết kênh hỏi hỗ trợ và kênh nộp link repository của lớp.
 - [ ] Biết tên repository bắt buộc theo mẫu `<KHOA>-DAY01-HoVaTen-MSSV`; không thêm email, số điện thoại
-  hoặc dữ liệu cá nhân khác.
+      hoặc dữ liệu cá nhân khác.
 
 Nếu thiếu tài khoản hoặc không mở được repository, báo Lab Coach trước khi chạy bài.
 
@@ -201,20 +201,20 @@ git push
 
 ## Lỗi thường gặp
 
-| Hiện tượng | Cách xử lý |
-| --- | --- |
-| Notebook chỉ xem được, không sửa hoặc lưu được | Đăng nhập Google rồi nhấn **Copy to Drive**. Làm bài trên bản sao trong Drive của bạn. |
-| Không có GPU hoặc Colab báo hết GPU | Tiếp tục bằng CPU. Không tự đổi checkpoint; bài dùng model `n` để vẫn chạy được trên CPU. |
-| Ô sau lỗi vì thiếu package/biến/file | Chọn `Runtime → Restart session`, sau đó **Run all** từ đầu; không chỉ chạy lại riêng ô đang lỗi. |
-| Tải ảnh/model lỗi hoặc báo sai checksum | Kiểm tra Internet, restart session và chạy lại. Không xóa hoặc bỏ qua bước checksum. |
-| Runtime bị ngắt hoặc mất kết nối | Nhấn **Reconnect**, sau đó chạy lại notebook từ đầu để tránh output cũ/thiếu. |
-| Không thấy `REPORT.md` hoặc `day1_lab_outputs/` | Chạy lại từ đầu và đọc lỗi ở ô kiểm tra bằng chứng. Không tự tạo file rỗng để thay thế. |
-| Không thấy ZIP trong Google Drive | Kiểm tra đã chạy ô cuối, đã cấp quyền Drive và đã thay đúng `KHOA`; sau đó mở `MyDrive/AI20K-Day1/`. |
-| ZIP có thêm thư mục bọc hoặc thiếu file | Không tự đóng gói lại. Chạy lại ô cuối của notebook và dùng đúng ZIP notebook vừa tạo. |
-| GitHub chỉ có file ZIP, không thấy các file báo cáo | Xóa ZIP khỏi thay đổi chưa commit, giải nén rồi đưa trực tiếp `REPORT.md` và `day1_lab_outputs/` vào `report/`. |
-| Không upload được thư mục qua GitHub Web | Mở đúng `report/`, kéo thả cả thư mục vào vùng upload. Nếu trình duyệt vẫn chặn, dùng Git hoặc nhờ Lab Coach hỗ trợ. |
-| `git push` bị từ chối quyền | Kiểm tra remote đang trỏ tới repository tạo từ template thuộc tài khoản của bạn; đăng nhập lại GitHub nếu cần. |
-| Lỡ đưa dữ liệu cá nhân vào báo cáo/output | Giữ định danh bắt buộc ở tên repository, xóa dữ liệu cá nhân khỏi `REPORT.md` và output trước khi nộp link; nếu đã push, báo GV/Lab Coach. |
+| Hiện tượng                                          | Cách xử lý                                                                                                                                 |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Notebook chỉ xem được, không sửa hoặc lưu được      | Đăng nhập Google rồi nhấn **Copy to Drive**. Làm bài trên bản sao trong Drive của bạn.                                                     |
+| Không có GPU hoặc Colab báo hết GPU                 | Tiếp tục bằng CPU. Không tự đổi checkpoint; bài dùng model `n` để vẫn chạy được trên CPU.                                                  |
+| Ô sau lỗi vì thiếu package/biến/file                | Chọn `Runtime → Restart session`, sau đó **Run all** từ đầu; không chỉ chạy lại riêng ô đang lỗi.                                          |
+| Tải ảnh/model lỗi hoặc báo sai checksum             | Kiểm tra Internet, restart session và chạy lại. Không xóa hoặc bỏ qua bước checksum.                                                       |
+| Runtime bị ngắt hoặc mất kết nối                    | Nhấn **Reconnect**, sau đó chạy lại notebook từ đầu để tránh output cũ/thiếu.                                                              |
+| Không thấy `REPORT.md` hoặc `day1_lab_outputs/`     | Chạy lại từ đầu và đọc lỗi ở ô kiểm tra bằng chứng. Không tự tạo file rỗng để thay thế.                                                    |
+| Không thấy ZIP trong Google Drive                   | Kiểm tra đã chạy ô cuối, đã cấp quyền Drive và đã thay đúng `KHOA`; sau đó mở `MyDrive/AI20K-Day1/`.                                       |
+| ZIP có thêm thư mục bọc hoặc thiếu file             | Không tự đóng gói lại. Chạy lại ô cuối của notebook và dùng đúng ZIP notebook vừa tạo.                                                     |
+| GitHub chỉ có file ZIP, không thấy các file báo cáo | Xóa ZIP khỏi thay đổi chưa commit, giải nén rồi đưa trực tiếp `REPORT.md` và `day1_lab_outputs/` vào `report/`.                            |
+| Không upload được thư mục qua GitHub Web            | Mở đúng `report/`, kéo thả cả thư mục vào vùng upload. Nếu trình duyệt vẫn chặn, dùng Git hoặc nhờ Lab Coach hỗ trợ.                       |
+| `git push` bị từ chối quyền                         | Kiểm tra remote đang trỏ tới repository tạo từ template thuộc tài khoản của bạn; đăng nhập lại GitHub nếu cần.                             |
+| Lỡ đưa dữ liệu cá nhân vào báo cáo/output           | Giữ định danh bắt buộc ở tên repository, xóa dữ liệu cá nhân khỏi `REPORT.md` và output trước khi nộp link; nếu đã push, báo GV/Lab Coach. |
 
 Nếu lỗi không có trong bảng, chụp màn hình **toàn bộ thông báo lỗi**, ghi rõ bước đang làm và gửi cho Lab
 Coach. Không gửi password, token GitHub hoặc mã xác thực Google.
@@ -232,15 +232,15 @@ Coach. Không gửi password, token GitHub hoặc mã xác thực Google.
 
 ## Tệp trong repository
 
-| Tệp | Dùng để làm gì |
-| --- | --- |
+| Tệp                                      | Dùng để làm gì                                             |
+| ---------------------------------------- | ---------------------------------------------------------- |
 | `notebooks/day1_understand_labels.ipynb` | chạy ba tác vụ, tạo evidence và đóng gói bài nộp lên Drive |
-| `GUIDE.md` | đọc output và xử lý lỗi thường gặp |
-| `reports/REPORT_TEMPLATE.md` | mẫu báo cáo cá nhân |
-| `report/` | thư mục học viên đưa nội dung ZIP vào rồi commit/push |
-| `RUBRIC.md` | tự kiểm tra formative; không phải ngưỡng đạt chính thức |
-| `requirements.txt` | phiên bản Ultralytics đã ghim cho lần phát hành này |
-| `tests/test_repository_contract.py` | kiểm tra tên tệp và hợp đồng notebook |
+| `GUIDE.md`                               | đọc output và xử lý lỗi thường gặp                         |
+| `reports/REPORT_TEMPLATE.md`             | mẫu báo cáo cá nhân                                        |
+| `report/`                                | thư mục học viên đưa nội dung ZIP vào rồi commit/push      |
+| `RUBRIC.md`                              | tự kiểm tra formative; không phải ngưỡng đạt chính thức    |
+| `requirements.txt`                       | phiên bản Ultralytics đã ghim cho lần phát hành này        |
+| `tests/test_repository_contract.py`      | kiểm tra tên tệp và hợp đồng notebook                      |
 
 ## Nguồn kỹ thuật
 
